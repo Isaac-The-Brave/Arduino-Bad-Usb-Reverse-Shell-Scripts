@@ -12,31 +12,6 @@ void setup()
 
   Keyboard.begin();
 
-  // Start Payload
-  // Title: msfQuack.txt
-
-  // Author: mikeOxmaul (Props: Dan Tentler <Twitter @Viss> and Matt Graeber <Twitter @mattifestation>)
-
-  // Date: 20020308
-
-  // Target: Windows 10 (v. 1809)
-
-  // Assumptions:
-
-  // 1. Used against unlocked device w/admin lvl privileges
-
-  // 2. Default 'prompt for consent' UAC policy in place for admin accts
-
-  // Script will do the following:
-
-  // 1. Remove Security Definitions for Windows Defender & Disable IOffice AV Protection
-
-  // 2. Disable Real Time Monitoring Protection & Add Exclusion Path
-
-  // 3. Download, Save and Run payload (windows/meterpreter/reverse_tcp)
-
-  // Apologies in advance for the funky delays and not using 'GUI r'.  Tested on VirtualBox 6.1 on a macOS host.
-
    // Start Payload
   delay(3000);
 
